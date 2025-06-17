@@ -1,0 +1,226 @@
+/*carrousel*/
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+}
+h1 {
+    position: relative;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    color: #03376e;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+    font-weight: 700;
+    background: linear-gradient(to right, #a1c4fd, #dfe9f3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 1;
+}
+
+.carrousel {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+.slide {
+    display: none;
+    margin: 0;
+}
+.slide img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+}
+.slide.active {
+    display: block;
+}
+figcaption {
+    background: linear-gradient(270deg, #a1c4fd, #ffffff, #dfe9f3);
+    background-size: 600% 600%;
+    animation: gradientAnim 8s ease infinite;
+    color: #03376e;
+    padding: 12px;
+    font-size: 1em;
+    font-weight: 500;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+button {
+    background: linear-gradient(to-right, #a1c4fd, #dfe9f3);
+    color: #03376e;
+    border: none;
+    padding: 12px 24px;
+    margin-top: 20px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(161, 196, 253, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(161, 196, 253, 0.6);
+}
+
+@keyframes gradientAnim {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/*todolist*/
+body {
+    font-family: sans-serif;
+    padding: 40px;
+    text-align: center;
+    background: linear-gradient(-45deg, #ffecd2, #fcb69f, #ff9a9e, #fad0c4);
+    background-size: 400% 400%;
+    animation: degradeAnime 12s ease infinite;
+}
+ /*#a1c4fd, #c2e9fb, #dfe9f3, #ffffff
+ #e0c3fc, #8ec5fc, #a1c4fd, #dfe9f3*/
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: rgb(3, 55, 110);
+}
+form {
+    margin-bottom: 30px;
+}
+input {
+    padding: 10px;
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    background-color: #a1c4fd;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    background: #fff;
+    padding: 12px;
+    margin: 10px auto;
+    width: 300px;
+    border-radius: 5px;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes degradeAnime {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+    
+}
+/*scoreKeeper*/
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(-45deg, #e0c3fc, #a1c4fd, #dfe9f3);
+    background-size: 400% 400%;
+    animation: degradeAnime 15s ease infinite;
+    padding: 40px;
+    text-align: center;
+    color: #03376e;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  font-weight: bold;
+  background: linear-gradient(270deg, #a1c4fd, #dfe9f3, #a1c4fd);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animTitre 10s ease infinite;
+}
+p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+#scoreMax {
+    background: #ffffffa6;
+    padding: 4px 12px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+button {
+    padding: 12px 24px;
+    margin: 12px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #a1c4fd;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#btn1 {
+    background-color: #6ec6ff;
+    color: white;
+}
+#btn2 {
+    background-color: #a1c4fd;
+    color: white;
+}
+
+
+#reset {
+    background-color: #ff6b6b;
+}
+#affichageScore {
+  background: #ffffffcc;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(161, 196, 253, 0.3);
+}
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/*Animation fond*/
+@keyframes degradeAnime {
+    0% { background-position: 0% 50%;}
+    50% { background-position: 0% 50%;}
+    100% { background-position: 0% 50%;}
+}
+@keyframes animTitre {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}

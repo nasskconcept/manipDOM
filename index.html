@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>ManipDOM</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+          <header>
+    <h1> Mes 3 Projets Front-End</h1>
+  </header>
+    <section id="carousel">
+    <h2> Carrousel</h2>
+           <section class="carrousel">
+            <figure class="slide active">
+                <img src="./assets/structure1.jpg" alt="Façade d'un bâtiment">
+                <figcaption>Image 1</figcaption>
+            </figure>
+            <figure class="slide">
+                <img src="./assets/structure2.jpg" alt="Façade d'un bâtiment">
+                <figcaption>Image 2</figcaption>
+            </figure>
+            <figure class="slide">
+                <img src="./assets/structure3.jpg" alt="Façade d'un bâtiment">
+                <figcaption>Image 3</figcaption>
+            </figure>
+        </section>
+        <button id="suivant">Suivant</button>
+  </section>
+
+  <section id="todo">
+    <h2> Liste de Courses</h2>
+            <form id="formulaire">
+            <input type="text" id="item" placeholder="Ajouter un article..." required>
+            <button type="submit">Ajouter</button>
+        </form>
+        <ul id="liste"></ul>
+  </section>
+
+  <section id="score">
+    <h2>🏆 Score Keeper</h2>
+            <p id="affichageScore"><span id="score1">0</span> à <span id="score2">0</span></p>
+        <p>Score max : <span id="scoreMax">5</span></p>
+
+        <button id="btn1">Player 1</button>
+        <button id="btn2">Player 2</button>
+        <button id="reset">Reset</button>
+  </section>
+  <script src="script.js"></script>
+    </body>
+</html>
