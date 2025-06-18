@@ -224,3 +224,36 @@ button:hover {
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
+/* ===== NAV MINI ===== */
+.nav-mini {
+  position: sticky;        /* reste visible quand on scrolle */
+  top: 0;
+  z-index: 100;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  padding: 10px 0;
+  background: #ffffffdd;   /* fond blanc semi-transparent */
+  backdrop-filter: blur(6px);
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.nav-mini button {
+  border: none;
+  padding: 8px 14px;
+  border-radius: 9999px;
+  background: linear-gradient(to right, #a1c4fd, #dfe9f3);
+  color: #03376e;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform .2s, box-shadow .2s;
+}
+
+.nav-mini button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(161, 196, 253, 0.4);
+}
+
+/* Défilement doux partout dans la page */
+html { scroll-behavior: smooth; }

@@ -113,3 +113,10 @@ resetBtn.addEventListener("click", function () {
   btn1.disabled = false;
   btn2.disabled = false;
 });
+// --- Navigation interne (smooth scroll) ---
+document.querySelectorAll(".nav-mini button").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const cible = document.querySelector(btn.dataset.target);
+    if (cible) cible.scrollIntoView({ behavior: "smooth" });
+  });
+});
